@@ -1,0 +1,29 @@
+<div style="display:inline-block;vertical-align:top">
+        <h1>Surgery Lazio </h1>
+        <div>
+            <div class="container" style="margin-top:20px">
+                
+                     
+                        <ul>
+                            <li class="card card-1" 
+                            *ngFor="let e of employees" style="list-style:none;">
+                            <div class="text-italic" style="padding:5px;">{{e.DATA}}</div>
+                            <div class="panel-heading">
+                                <h2 class="panel-title">{{e.ISTITUTO}}</h2>
+                                <p>{{e.COMUNE}}</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-info" style="padding:5px;">Rossi Attivi <span class="badge badge-error">{{e.ROSSI_ATT}}</span></div>
+                                <div class="text-info" style="padding:5px;">Gialli Attivi <span class="badge badge-warning">{{e.GIALLI_ATT}}</span></div>
+                                <div class="text-info" style="padding:5px;">Verdi Attivi <span class="badge badge-success">{{e.VERDI_ATT}}</span></div>
+                                <div class="text-info" style="padding:5px;">Bianchi Attivi <span class="badge">{{e.BIANCHI_ATT}}</span></div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="button"><button class="btn-success">Info</button></div>
+                            </div>
+                            </li>
+                        </ul>
+               
+            </div>
+        </div>
+    </div>
